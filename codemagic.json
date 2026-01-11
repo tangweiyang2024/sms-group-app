@@ -1,0 +1,25 @@
+{
+  "workflowName": "SMS Group App Build",
+  "projectId": "sms-group-app",
+  "baseBranch": "main",
+  "buildTools": {
+    "flutter": "stable"
+  },
+  "platforms": [
+    "android"
+  ],
+  "artifacts": [
+    {
+      "name": "APK",
+      "paths": [
+        "build/app/outputs/flutter-apk/app-release.apk"
+      ]
+    },
+    {
+      "name": "App Bundle",
+      "paths": [
+        "build/app/outputs/bundle/release/app-release.aab"
+      ]
+    }
+  ]
+}

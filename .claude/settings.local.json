@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run start:*)",
+      "Bash(npm run android:*)",
+      "Bash(taskkill:*)",
+      "Bash(npx expo start:*)",
+      "Bash(timeout:*)",
+      "Bash(npm run web:*)",
+      "Bash(npm install:*)",
+      "Bash(eas build:configure:*)",
+      "Bash(eas build:*)",
+      "Bash(where:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
