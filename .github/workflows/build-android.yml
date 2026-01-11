@@ -2,9 +2,9 @@ name: Build Android APK
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master ]
   workflow_dispatch:
 
 jobs:
@@ -28,7 +28,7 @@ jobs:
       run: flutter build apk --release
 
     - name: Upload APK
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: app-release
         path: build/app/outputs/flutter-apk/app-release.apk
@@ -38,7 +38,7 @@ jobs:
       run: flutter build appbundle --release
 
     - name: Upload App Bundle
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: app-release-bundle
         path: build/app/outputs/bundle/release/app-release.aab
